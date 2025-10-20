@@ -7,16 +7,24 @@ $nomsInput = ["Nom","Prénom","Ville"];
 afficherInput($nomsInput);
 <p>
 
+<!-- <form action="" method="post">
+   <label>Votre nom :</label>
+   <input name="nom" id="nom" type="text" />
+
+   <label>Votre âge :</label>
+   <input name="age" id="age" type="number"/></p>
+
+   <button type="submit">Valider</button>
+</form> -->
 <?php
-function afficherInput(array  ) : string {
-   
+$nomsInput = ["Nom","Prénom","Ville"];
+
+function afficherInput(array $champs) : string {
     $formulaire = "<form>";
 
-   
-    foreach () {
-      
-        
-       
+    foreach ($champs as $champ) {
+       $formulaire .= "<label> " .$champ.  "</label><br>";
+       $formulaire .= "<input name =" .$champ.  "/></p>";
     }
 
     
@@ -24,6 +32,7 @@ function afficherInput(array  ) : string {
 
     return $formulaire;
 }
+echo afficherInput($nomsInput);
 
 
 ?>
