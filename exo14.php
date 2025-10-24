@@ -1,4 +1,9 @@
 <?php
-$_GET['test'] = 2.5;
-echo filter_has_var(INPUT_GET, 'test') ? 'Yes' : 'No';
+$lien = "elan@elan-formation.fr";
+
+if (filter_var($lien, FILTER_VALIDATE_EMAIL)) {
+    echo "Email address '$lien' is considered valid.\n";
+} else {
+    echo "Email address '$lien' is considered invalid.\n";
+}
 ?>
