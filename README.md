@@ -75,7 +75,7 @@ urlencode() → encoder une URL
 
 **Utilisation des structures :**
 
-- construction d’un <table> avec <thead>, <tbody>, <tr>, <td>
+- construction d’untable avec thead, tbody, tr, td
 
 - ajout d’une colonne contenant un lien Wikipédia
 
